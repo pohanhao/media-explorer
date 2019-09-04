@@ -43,6 +43,18 @@ public class CacheConfiguration {
             createCache(cm, idv.hank.explorer.domain.User.class.getName());
             createCache(cm, idv.hank.explorer.domain.Authority.class.getName());
             createCache(cm, idv.hank.explorer.domain.User.class.getName() + ".authorities");
+            createCache(cm, idv.hank.explorer.domain.Region.class.getName());
+            createCache(cm, idv.hank.explorer.domain.Country.class.getName());
+            createCache(cm, idv.hank.explorer.domain.Location.class.getName());
+            createCache(cm, idv.hank.explorer.domain.Department.class.getName());
+            createCache(cm, idv.hank.explorer.domain.Department.class.getName() + ".employees");
+            createCache(cm, idv.hank.explorer.domain.Task.class.getName());
+            createCache(cm, idv.hank.explorer.domain.Task.class.getName() + ".jobs");
+            createCache(cm, idv.hank.explorer.domain.Employee.class.getName());
+            createCache(cm, idv.hank.explorer.domain.Employee.class.getName() + ".jobs");
+            createCache(cm, idv.hank.explorer.domain.Job.class.getName());
+            createCache(cm, idv.hank.explorer.domain.Job.class.getName() + ".tasks");
+            createCache(cm, idv.hank.explorer.domain.JobHistory.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
